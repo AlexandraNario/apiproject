@@ -18,13 +18,16 @@ export async function chuckchuckles() {
     const jokeSetupElement = document.getElementById('joke');
     jokeSetupElement.innerHTML = jokeSetup;
 
+    const jokeContainer = document.getElementById('joke-container');
+    jokeContainer.appendChild(jokeSetupElement);
     //console.log(response.data);
   } catch (error) {
     console.error(error);
-  }
-}
-chuckchuckles();
+  };
+};
 
+//according to the RAPIDapi forum apparently the Chuck Norris Api service has been unavailable for 2 years
+//even though forum popularity was rated at a 98% the api was rated a 1.5 out of 5
 /*export async function achuckchucklesjoke(){
     const apiUrl = 'https://api.chucknorris.io/jokes/random';
 
@@ -43,4 +46,4 @@ chuckchuckles();
    .catch ((error) => {
     console.error('Error retrieving Chuck Norris Joke', error);
   });
-}
+} */
