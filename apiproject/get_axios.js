@@ -1,6 +1,31 @@
 import axios from 'axios';
 
-export async function chuckchuckles(){
+const options = {
+  method: 'GET',
+  url: 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random',
+  headers: {
+    accept: 'application/json',
+    'X-RapidAPI-Key': '04760cb00amshdb960aae59dc6e0p132ffdjsn98bb93adf5a4',
+    'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
+  }
+};
+
+export async function chuckchuckles() {
+  try {
+    const response = await axios.request(options);
+    const jokeSetup = response.data.setup;
+    
+    const jokeSetupElement = document.getElementById('joke');
+    jokeSetupElement.innerHTML = jokeSetup;
+
+    //console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+chuckchuckles();
+
+/*export async function achuckchucklesjoke(){
     const apiUrl = 'https://api.chucknorris.io/jokes/random';
 
     axios(apiUrl)

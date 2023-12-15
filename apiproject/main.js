@@ -1,9 +1,9 @@
 import './style.css'
 
-//import { chuckchuckles } from "./get_axios";
+import { chuckchuckles } from "./get_axios";
 
-//chuckchuckles();
+chuckchuckles();
 
-import { fetchJoke } from "./joke";
+//import { fetchJoke } from "./joke";
 
-fetchJoke();
+//fetchJoke();
