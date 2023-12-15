@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const apiUrl = 'https://official-joke-api.appspot.com/random_joke';
 
-async function fetchJoke() {
+export async function fetchJoke() {
   try {
     const response = await axios.get(apiUrl);
     const jokeSetup = response.data.setup;
@@ -21,3 +21,4 @@ async function fetchJoke() {
     console.error(error);
   }
 }
+

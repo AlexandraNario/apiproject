@@ -14,8 +14,13 @@
   </div>
   <div class="container">
     <div class="center">
+      <button onclick="location.reload()">Refresh Page for a new joke</button>
+      <!-- This function reloads the current page, which effectively refreshes the page.-->
+      <!-- originally I had the fetchjoke() here but a new joke was not provided when pressed.
+        When I attempted to have the set the function to return in joke.js so a new joke was provide but then 
+      my Connection got momentarily blocked because I was making too many requests at once. I decided having the button 
+    be set to refresh the page might be easier -->
       <div id="joke-container"></div>
-      <button onclick="fetchJoke()">Click for a joke</button>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
