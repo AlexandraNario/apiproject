@@ -4,7 +4,7 @@
 - API was sourced from Apipheny: [API SITE](https://apipheny.io/free-api/#apis-without-key)
 - The Jokes API gets random jokes. You can also get jokes according to type (e.g., programming jokes only). 
 - In my Web Application, I only used the Joke API to randomly deliver jokes.
-- Joke.js, main.js, index.html, and style.css are used for this assignment (please ignore ~~get_axios.js~~, this was used in a testing phase)
+- joke.js, main.js, index.html, and style.css are used for this assignment (please ignore ~~get_axios.js~~, this was used in a testing phase)
 
 ## *How to run the project*
 1. Put the files in this repository in your chosen code editor. You can do this by cloning this Git project repository URL.
