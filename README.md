@@ -10,13 +10,15 @@
 1. Put the files in this repository in your chosen code editor. You can do this by cloning this Git project repository URL.
 2. Once cloned, navigate into the git project directly using the `cd apiproject/apiproject` commmand to reach the apiproject file inside the apiproject folder.
 3. To run the web application, you'll need to install the dependencies. In the terminal run the `npm install` command to install all the necessary packages.
-```npm install
+```
+npm install
 ```
 4. After the dependencies are install, start the web application by running the command `npm run dev`. This will start the development server and you can see the web application from you browser. 
 ```
 npm run dev
 ```
-5. You should recieve a localhost: 
+5. You should recieve a localhost link: 
+
 ex. --> local:  http://localhost:5173/
 6. click the local host link and go to the server. 
 7. click the button on the screen that says: `Refresh page for a new joke` anytime you want a new joke.
